@@ -1,0 +1,32 @@
+.body{
+    font-family: Arial;
+}
+.n1 {
+    display: flex;               /* Ativa o Flexbox */
+    justify-content: flex-end;   /* Alinha os itens à direita */
+}
+.n1 ul{
+    list-style: none;  /* Remove os marcadores da lista */
+    padding: 0;        /* Remove o padding */
+    margin: 0;         /* Remove a margem */
+    display: flex;     /* Exibe os itens em linha */
+}
+.n1 li{
+    margin-left: 20px; /* Adiciona um espaço entre os itens */
+    display: flex;     /* Alinha os itens dentro do <li> em linha */
+    align-items: center; /* Alinha as imagens e o texto */
+}
+.n1 img {
+    margin-right: 8px;  /* Espaço entre a imagem e o link */
+}
+.n1 a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: black;          /* Cor do texto */
+}
+.logo{
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 300px;
+}
