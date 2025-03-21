@@ -1,7 +1,7 @@
 body{
     font-family: Arial;
     font-size: 20px;
-    
+
 }
 .n1 {
     display: flex;               /* Ativa o Flexbox */
@@ -33,7 +33,7 @@ body{
     margin-left: 300px;
 }
 html{
-    background-image: url(hhttps://blog.simpliza.com.br/wp-content/uploads/2023/10/sistema-para-doceria-gratuito.png);
+    background-image: url(https://blog.simpliza.com.br/wp-content/uploads/2023/10/sistema-para-doceria-gratuito.png);
     background-size: cover;
     background-repeat: no-repeat;
 
