@@ -1,27 +1,26 @@
 body{
-    font-family: Arial;
-    font-size: 20px;
-
+    font-family: Arial, 20px;
+    color: white;
 }
-.n1 {
+.rodape {
     display: flex;               /* Ativa o Flexbox */
-    justify-content: flex-end;   /* Alinha os itens à direita */
+    justify-content: center;   /* Alinha os itens à direita */
 }
-.n1 ul{
+.rodape ul{
     list-style: none;  /* Remove os marcadores da lista */
     padding: 0;        /* Remove o padding */
     margin: 0;         /* Remove a margem */
     display: flex;     /* Exibe os itens em linha */
 }
-.n1 li{
+.rodape li{
     margin-left: 20px; /* Adiciona um espaço entre os itens */
     display: flex;     /* Alinha os itens dentro do <li> em linha */
     align-items: center; /* Alinha as imagens e o texto */
 }
-.n1 img {
+.rodape img {
     margin-right: 8px;  /* Espaço entre a imagem e o link */
 }
-.n1 a {
+.rodape a {
     text-decoration: none; /* Remove o sublinhado do link */
     color: black;          /* Cor do texto */
 }
@@ -36,5 +35,45 @@ html{
     background-image: url(https://blog.simpliza.com.br/wp-content/uploads/2023/10/sistema-para-doceria-gratuito.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: peru;
+}
+header{
+    background-color: peru;
+    width: 1000px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-items: center;
+}
+.preco{
+    color: red;
+    font-weight: bold;
+}
+.container {
+            display: flex;  /* Ativa o Flexbox */
+            justify-content: space-between; /* Espaço entre as divs */
+            gap: 20px; /* Espaçamento */
+        }
+.tamanhos, .recheios {
+            width: 48%; /* Ocupam metade do espaço cada uma */
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 10px;
 
+        }
+
+        /* Melhorando a aparência da lista */
+        ul {
+            list-style-type: none; /* Remove os pontos da lista */
+            padding: 0;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+        @media (max-width: 600px) {
+    .tamanhos, .recheios {
+        width: 100%; /* Ocupam toda a largura */
+    }
 }
