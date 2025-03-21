@@ -30,7 +30,7 @@
     display: flex;
     margin-left: 300px;
 }
-.html{
+html{
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt1lMu1S0CcqeE5-L071EuydPi9g0LdXM8gQ&s);
     background-size: cover;
     background-repeat: no-repeat;
