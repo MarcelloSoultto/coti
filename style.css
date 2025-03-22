@@ -39,7 +39,7 @@ html{
 }
 header{
     background-color: peru;
-    width: 1000px;
+    width: auto;
     height: 100px;
     align-items: center;
     justify-content: center;
