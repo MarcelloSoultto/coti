@@ -77,3 +77,6 @@ header{
         width: 100%; /* Ocupam toda a largura */
     }
 }
+.topo{
+    margin: 10px;
+}
