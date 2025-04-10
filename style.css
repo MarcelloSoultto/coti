@@ -85,12 +85,13 @@ li {
 .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down; /* Ajusta a imagem para caber no slide */
     border-radius: 10px;
+    
 }
 .swiper mySwiper{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: flex-start;
     height: 100vh;
     background-color: #f4f4f4;
