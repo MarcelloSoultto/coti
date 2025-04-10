@@ -52,40 +52,36 @@ header{
     font-weight: bold;
 }
 .container {
-            display: flex;  /* Ativa o Flexbox */
-            justify-content: space-between; /* Espaço entre as divs */
-            gap: 20px; /* Espaçamento */
-        }
+    display: flex;  /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaço entre as divs */
+    gap: 20px; /* Espaçamento */
+}
 .tamanhos, .recheios {
-            width: 48%; /* Ocupam metade do espaço cada uma */
-            padding: 20px;
-            background-color: transparent;
-            border-radius: 10px;
-
-        }
-
-        /* Melhorando a aparência da lista */
-        ul {
-            list-style-type: none; /* Remove os pontos da lista */
-            padding: 0;
-        }
-
-        li {
-            padding: 5px 0;
-        }
-        @media (max-width: 600px) {
-    .tamanhos, .recheios {
-        width: 100%; /* Ocupam toda a largura */
-    }
+    width: 48%; /* Ocupam metade do espaço cada uma */
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+/* Melhorando a aparência da lista */
+ul {
+    list-style-type: none; /* Remove os pontos da lista */
+    padding: 0;
+}
+li {
+    padding: 5px 0;
+}
+@media (max-width: 600px) {
+.tamanhos, .recheios {
+    width: 100%; /* Ocupam toda a largura */
+}
 }
 .topo{
     margin: 10px;
 }
 .swiper {
-    width: 600px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
 }
-
 .swiper-slide img {
     width: 100%;
     height: 100%;
@@ -94,8 +90,8 @@ header{
 }
 .swiper mySwiper{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     height: 100vh;
     background-color: #f4f4f4;
 }
