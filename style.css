@@ -1,154 +1,172 @@
-/* === RESET E GLOBAIS === */
+/* === RESET === */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    background-image: url('https://img.freepik.com/fotos-premium/ilustracao-do-fundo-social-pastel-de-neo-memphis_53876-150040.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: black;
-    line-height: 1.5;
+  font-family: 'Quicksand', sans-serif;
+  background: #fffaf8;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* === COMPONENTES REUTILIZÁVEIS === */
-.preco {
-    color: red;
-    font-weight: bold;
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  color: #6b3e26;
 }
 
-.titulo-icone img {
-    vertical-align: middle;
-    margin-right: 5px;
+h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #8b4513;
 }
 
-/* === HEADER E LOGO === */
-header {
-    background-color: peru;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-/* === CONTAINER PRINCIPAL === */
-.container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
-.tamanhos, .recheios {
-    width: 48%;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.6);
-}
-
-/* === LISTAS === */
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 li {
-    padding: 5px 0;
+  margin-bottom: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === HEADER === */
+header {
+  background-color: #f2d6b3;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.titulo p {
+  font-size: 1rem;
+  color: #5c3c2b;
 }
 
 /* === CARROSSEL === */
+.carrossel {
+  margin: 30px auto;
+  max-width: 500px;
+}
+
 .swiper {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin: 30px auto;
+  border-radius: 10px;
 }
 
 .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
-    border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-/* === TOPO DE BOLO, DECORAÇÃO, DOCINHOS === */
-.topo, .decoracao, .docinhos {
-    margin: 20px;
+/* === CONTEÚDO PRINCIPAL === */
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.extras {
+  padding: 0 20px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff2e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h2 img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.preco {
+  color: red;
+  font-weight: bold;
+}
+
+.info {
+  font-size: 0.95em;
+  color: #555;
+  text-align: center;
+  margin-top: 10px;
 }
 
 /* === RODAPÉ === */
 .rodape {
-    display: flex;
-    justify-content: center;
-    font-size: 11px;
-    font-weight: bold;
-    padding: 20px;
-    flex-wrap: wrap;
+  background-color: #f2d6b3;
+  padding: 20px;
+  text-align: center;
 }
 
 .rodape ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .rodape li {
-    margin: 10px 20px;
-    display: flex;
-    align-items: center;
-}
-
-.rodape img {
-    margin-right: 8px;
-    width: 30px;
-    height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .rodape a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s;
+  color: #000;
+  text-decoration: none;
 }
 
 .rodape a:hover {
-    color: peru;
-    text-decoration: underline;
+  text-decoration: underline;
+  color: #8b4513;
 }
 
-/* === MEDIA QUERIES === */
+/* === WHATSAPP FLOAT === */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 60px;
+}
+
+/* === RESPONSIVO === */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .tamanhos, .recheios {
-        width: 100%;
-    }
+  .card {
+    width: 90%;
+  }
 
-    .rodape ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .swiper {
-        width: 90%;
-    }
+  header {
+    flex-direction: column;
+  }
 }
