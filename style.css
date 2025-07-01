@@ -44,8 +44,14 @@ header {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 20px;
+  padding: 0 20px;
+  height: 100px;      /* altura fixa */
   justify-content: center;
+}
+
+header img {
+  height: 100%;      /* ocupa toda a altura do header */
+  width: auto;       /* largura proporcional */
 }
 
 .titulo {
