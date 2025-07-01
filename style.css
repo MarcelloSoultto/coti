@@ -1,98 +1,154 @@
-body{
-    font-family: Arial, 20px;
-    color:black;
+/* === RESET E GLOBAIS === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.rodape {
-    display: flex;               /* Ativa o Flexbox */
-    justify-content: center;   /* Alinha os itens à direita */
-    font-size: 11px;
-    font-weight: bold;
-}
-.rodape ul{
-    list-style: none;  /* Remove os marcadores da lista */
-    padding: 0;        /* Remove o padding */
-    margin: 0;         /* Remove a margem */
-    display: flex;     /* Exibe os itens em linha */
-}
-.rodape li{
-    margin-left: 20px; /* Adiciona um espaço entre os itens */
-    display: flex;     /* Alinha os itens dentro do <li> em linha */
-    align-items: center; /* Alinha as imagens e o texto */
-}
-.rodape img {
-    margin-right: 8px;  /* Espaço entre a imagem e o link */
-}
-.rodape a {
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: black;          /* Cor do texto */
-}
-.logo{
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    display: flex;
-    margin-left: 300px;
-}
-html{
-    background-image: url(https://img.freepik.com/fotos-premium/ilustracao-do-fundo-social-pastel-de-neo-memphis_53876-150040.jpg);
+
+html {
+    background-image: url('https://img.freepik.com/fotos-premium/ilustracao-do-fundo-social-pastel-de-neo-memphis_53876-150040.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
-header{
-    background-color: peru;
-    width: auto;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    justify-items: center;
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    line-height: 1.5;
 }
-.preco{
+
+/* === COMPONENTES REUTILIZÁVEIS === */
+.preco {
     color: red;
     font-weight: bold;
 }
+
+.titulo-icone img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* === HEADER E LOGO === */
+header {
+    background-color: peru;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* === CONTAINER PRINCIPAL === */
 .container {
-    display: flex;  /* Ativa o Flexbox */
-    justify-content: space-between; /* Espaço entre as divs */
-    gap: 20px; /* Espaçamento */
-}
-.tamanhos, .recheios {
-    width: 48%; /* Ocupam metade do espaço cada uma */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     padding: 20px;
-    background-color: transparent;
-    border-radius: 10px;
+    flex-wrap: wrap;
 }
-/* Melhorando a aparência da lista */
+
+.tamanhos, .recheios {
+    width: 48%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* === LISTAS === */
 ul {
-    list-style-type: none; /* Remove os pontos da lista */
+    list-style-type: none;
     padding: 0;
 }
+
 li {
     padding: 5px 0;
 }
-@media (max-width: 600px) {
-.tamanhos, .recheios {
-    width: 100%; /* Ocupam toda a largura */
-}
-}
-.topo{
-    margin: 10px;
-}
+
+/* === CARROSSEL === */
 .swiper {
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 30px auto;
 }
+
 .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: scale-down; /* Ajusta a imagem para caber no slide */
+    object-fit: scale-down;
     border-radius: 10px;
-    
 }
-.swiper mySwiper{
+
+/* === TOPO DE BOLO, DECORAÇÃO, DOCINHOS === */
+.topo, .decoracao, .docinhos {
+    margin: 20px;
+}
+
+/* === RODAPÉ === */
+.rodape {
     display: flex;
-    justify-content:space-around;
-    align-items: flex-start;
-    height: 100vh;
-    background-color: #f4f4f4;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.rodape ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.rodape li {
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.rodape img {
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.rodape a:hover {
+    color: peru;
+    text-decoration: underline;
+}
+
+/* === MEDIA QUERIES === */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tamanhos, .recheios {
+        width: 100%;
+    }
+
+    .rodape ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .swiper {
+        width: 90%;
+    }
 }
