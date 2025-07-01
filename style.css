@@ -1,4 +1,4 @@
-/* === RESET === */
+/* === RESET GERAL === */
 * {
   margin: 0;
   padding: 0;
@@ -12,50 +12,29 @@ body {
   line-height: 1.6;
 }
 
-h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 2em;
-  color: #6b3e26;
-}
-
-h2 {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-  color: #8b4513;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-li {
-  margin-bottom: 5px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* === HEADER === */
 header {
   background-color: #f2d6b3;
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 0 20px;
-  height: 100px;      /* altura fixa */
   justify-content: center;
+  gap: 20px;
+  padding: 10px 20px;
+  height: auto;                /* Agora é flexível */
+  margin-bottom: 20px;         /* Espaço entre header e carrossel */
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 header img {
-  height: 100%;      /* ocupa toda a altura do header */
-  width: auto;       /* largura proporcional */
+  height: 80px;                /* Ajustável para a maioria dos dispositivos */
+  width: auto;
 }
 
-.titulo {
-  text-align: center;
+.titulo h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #6b3e26;
 }
 
 .titulo p {
@@ -65,8 +44,9 @@ header img {
 
 /* === CARROSSEL === */
 .carrossel {
-  margin: 30px auto;
   max-width: 500px;
+  margin: 0 auto 40px;
+  padding: 0 10px;
 }
 
 .swiper {
@@ -75,105 +55,29 @@ header img {
 
 .swiper-slide img {
   width: 100%;
-  height: 300px;
-  object-fit: contain; /* em vez de cover */
-  background-color: #fff; /* opcional: fundo branco para áreas vazias */
+  height: 250px;
+  object-fit: contain;          /* Exibe a imagem sem cortar */
+  background-color: #fff;
   border-radius: 10px;
-}
-
-/* === CONTEÚDO PRINCIPAL === */
-.container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-}
-
-.extras {
-  padding: 0 20px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.card {
-  background-color: #fff2e6;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.card h2 img {
-  vertical-align: middle;
-  margin-right: 8px;
-}
-
-.preco {
-  color: red;
-  font-weight: bold;
-}
-
-.info {
-  font-size: 0.95em;
-  color: #555;
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* === RODAPÉ === */
-.rodape {
-  background-color: #f2d6b3;
-  padding: 20px;
-  text-align: center;
-}
-
-.rodape ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.rodape li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.rodape a {
-  color: #000;
-  text-decoration: none;
-}
-
-.rodape a:hover {
-  text-decoration: underline;
-  color: #8b4513;
-}
-
-/* === WHATSAPP FLOAT === */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  width: 60px;
 }
 
 /* === RESPONSIVO === */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 90%;
-  }
-
   header {
     flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  header img {
+    height: 60px;
+  }
+
+  .titulo h1 {
+    font-size: 1.6rem;
+  }
+
+  .swiper-slide img {
+    height: 200px;
   }
 }
