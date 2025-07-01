@@ -1,93 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>COTI' DOCES</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coti' DOCES</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!-- Estilo -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-     <img src="https://github.com/MarcelloSoultto/coti/blob/main/img/coti.png?raw=true" alt="Coti'DOCES" width="200px">
-</header>
-<main>
-      
-<div class="container">
-    <div class="tamanhos">
-        <h2><img src="https://static.vecteezy.com/system/resources/thumbnails/001/187/549/small/heart-glossy.png" width="20px" height="20px"><strong> Tamanhos</strong></h2>
-        <ul>
-            <li>15cm - Rende 15 fatias - <span class="preco">R$ 95,00</span></li>
-            <li>20cm - Rende 25 fatias - <span class="preco"> R$ 240,00</span></li>
-            <li>25cm - Rende 35 fatias - <span class="preco"> R$ 290,00</span></li>
-            <li>30 cm - Rende 45 fatias - <span class="preco"> R$ 450,00</span></li>
-        </ul>
+  <!-- Cabeçalho -->
+  <header>
+    <img src="https://github.com/MarcelloSoultto/coti/blob/main/img/coti.png?raw=true" alt="Logo Coti' DOCES" width="100" />
+    <div class="titulo">
+      <h1>Coti' DOCES</h1>
+      <p>Feito com amor para os seus melhores momentos 💕</p>
     </div>
-    <div class="recheios">
-        <h2><img src="https://static.vecteezy.com/system/resources/thumbnails/001/187/549/small/heart-glossy.png" width="20px" height="20px"><strong> Recheios</strong></h2>
-        <ul>
-            <li>Coco</li>
-            <li>Morango</li>
-            <li>Brigadeiro</li>
-            <li>Chocolate</li>
-            <li>Doce de leite</li>
-            <li>Brigadeiro Trufado</li>
-            <li>Ninho</li>
-        </ul>
+  </header>
+
+  <!-- Carrossel -->
+  <section class="carrossel">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/bolo1.jpg" alt="Bolo 1" /></div>
+        <div class="swiper-slide"><img src="img/bolo2.jpg" alt="Bolo 2" /></div>
+        <div class="swiper-slide"><img src="img/bolo3.jpg" alt="Bolo 3" /></div>
+        <div class="swiper-slide"><img src="img/bolo4.jpg" alt="Bolo 4" /></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
-</div>
-<!-- Estrutura do Carrossel -->
-<div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/bolo1.jpg" ></div>
-        <div class="swiper-slide"><img src="img/bolo2.jpg" ></div>
-        <div class="swiper-slide"><img src="img/bolo3.jpg" ></div>
-        <div class="swiper-slide"><img src="img/bolo4.jpg" ></div>
-        <div class="swiper-slide"><img src="img/bolo5.jpg" ></div>
-        <div class="swiper-slide"><img src="img/bolo6.jpg" ></div>
-        <div class="swiper-slide"><img src="img/bolo7.jpg" ></div>
-        <div class="swiper-slide"><img src="img/bolo8.jpg" ></div>
-    </div>
-    <!-- Botões de navegação -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-</div>
-    <div class="Topo">
-        <h2><img src="https://static.vecteezy.com/system/resources/thumbnails/001/187/549/small/heart-glossy.png" width="20px" height="20px"><strong> Topo de bolo</strong></h2>
+  </section>
+
+  <!-- Informações -->
+  <main>
+    <section class="container">
+      <div class="card">
+        <h2><img src="https://static.vecteezy.com/system/resources/thumbnails/001/187/549/small/heart-glossy.png" width="20" /> Tamanhos</h2>
         <ul>
-            <li>Topo Simples - R$ 15,00</li>
-            <li>Topo Luxo - R$ 35,00 <b>(Preço pode variar de acordo com o tamanho do bolo)</b></li>
+          <li>15cm - Rende 15 fatias - <span class="preco">R$ 95,00</span></li>
+          <li>20cm - Rende 25 fatias - <span class="preco">R$ 240,00</span></li>
+          <li>25cm - Rende 35 fatias - <span class="preco">R$ 290,00</span></li>
+          <li>30cm - Rende 45 fatias - <span class="preco">R$ 450,00</span></li>
         </ul>
-    </div>
-    <div>
-        <h2><img src="https://static.vecteezy.com/system/resources/thumbnails/001/187/549/small/heart-glossy.png" width="20px" height="20px"><strong> Decoração</strong></h2>
+      </div>
+
+      <div class="card">
+        <h2><img src="https://static.vecteezy.com/system/resources/thumbnails/001/187/549/small/heart-glossy.png" width="20" /> Recheios</h2>
         <ul>
-            <li>Morangos - R$ 9,90</li>
-            <li>Brigadeiros - R$ 20,00</li>
-            <li>Geléia Natural - R$ 25,00</li>
+          <li>Coco</li>
+          <li>Morango</li>
+          <li>Brigadeiro</li>
+          <li>Chocolate</li>
+          <li>Doce de leite</li>
+          <li>Brigadeiro Trufado</li>
+          <li>Ninho</li>
         </ul>
-    </div>
-    <div>
-        <h2><img src="https://static.vecteezy.com/system/resources/thumbnails/001/187/549/small/heart-glossy.png" width="20px" height="20px"><strong> Cento do Docinho</strong></h2>
+      </div>
+    </section>
+
+    <section class="extras">
+      <div class="card">
+        <h2>Topo de Bolo</h2>
         <ul>
-            <li>Comum - R$ 90,00</li>
-            <li>Gourmet - R$ 140,00</li>
+          <li>Simples - R$ 15,00</li>
+          <li>Luxo - R$ 35,00 <small>(pode variar)</small></li>
         </ul>
-    </div>
-    <p>Escolha 2 sabores de recheio e 1 sabor de massa. O pedido só é feito mediante a vista de 50% do valor.</p>
-    <p>Aceitamos por Pix ou cartão débito ou crédito (Acréscimo de 2% do valor total).</p>
-    </main>
- <footer class="rodape">
+      </div>
+
+      <div class="card">
+        <h2>Decoração</h2>
         <ul>
-        <li><img src="https://img.freepik.com/vetores-premium/icone-de-logotipo-de-vetor-do-instagram-logotipo-de-midia-social_901408-392.jpg?semt=ais_hybrid" width="50px" height="50px"><a href="https://www.instagram.com/sheila_soultto?igsh=Z2IwMWpuNTdyemU2"> sheila_soultto</a></li>
-        <li><img src="https://img.freepik.com/psd-premium/icone-de-whatsapp-de-fundo-transparente_943194-19080.jpg" width="50px" height="50px"><a href="//wa.me/5521966265500">(21) 96626-5500</a></li>
-        <li><img src="https://img.freepik.com/vetores-gratis/localizacao_53876-25530.jpg" width="50px" height="50px"><a href="#"> Parque Duque</a></li>
+          <li>Morangos - R$ 9,90</li>
+          <li>Brigadeiros - R$ 20,00</li>
+          <li>Geléia Natural - R$ 25,00</li>
         </ul>
- </footer>
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="script.js"></script>
+      </div>
+
+      <div class="card">
+        <h2>Cento do Docinho</h2>
+        <ul>
+          <li>Comum - R$ 90,00</li>
+          <li>Gourmet - R$ 140,00</li>
+        </ul>
+      </div>
+
+      <p class="info">
+        Escolha <strong>2 recheios</strong> e <strong>1 massa</strong>. Encomendas com entrada de 50%. <br />
+        Pagamento por Pix, cartão débito ou crédito (acréscimo de 2%).
+      </p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <ul>
+      <li>
+        <img src="https://img.freepik.com/vetores-premium/icone-de-logotipo-de-vetor-do-instagram-logotipo-de-midia-social_901408-392.jpg" width="30" />
+        <a href="https://www.instagram.com/sheila_soultto" target="_blank">@sheila_soultto</a>
+      </li>
+      <li>
+        <img src="https://img.freepik.com/psd-premium/icone-de-whatsapp-de-fundo-transparente_943194-19080.jpg" width="30" />
+        <a href="https://wa.me/5521966265500" target="_blank">(21) 96626-5500</a>
+      </li>
+      <li>
+        <img src="https://img.freepik.com/vetores-gratis/localizacao_53876-25530.jpg" width="30" />
+        <a href="#">Parque Duque</a>
+      </li>
+    </ul>
+  </footer>
+
+  <!-- Botão WhatsApp flutuante -->
+  <a href="https://wa.me/5521966265500" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
