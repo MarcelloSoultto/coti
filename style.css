@@ -81,3 +81,33 @@ header img {
     height: 200px;
   }
 }
+
+.sobre-mim {
+  padding: 2rem;
+  background-color: #fff5f7;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.sobre-mim .card {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.sobre-mim h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #d17c94;
+  margin-bottom: 1rem;
+}
+
+.sobre-mim p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
