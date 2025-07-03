@@ -129,3 +129,65 @@ header img {
   }
 }
 
+.foto img {
+  border-radius: 50%;
+  width: 180px;      /* ajuste o tamanho conforme desejar */
+  height: 180px;     /* ajuste o tamanho conforme desejar */
+  object-fit: cover; /* garante que a imagem preencha o círculo */
+}
+
+.foto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  /* Garante alinhamento central */
+}
+
+.contato-item img {
+  margin-right: 10px;
+  border-radius: 8px;
+  width: 28px;      /* ajuste para garantir tamanho igual */
+  height: 28px;     /* ajuste para garantir tamanho igual */
+  object-fit: cover;
+  display: block;
+}
+
+.contato-lista {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contato-item a {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #a14e7c; /* cor personalizada, ajuste se quiser */
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.alerta-info {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.2rem;
+  color: #b85c38;
+  background: #fff3e0;
+  border: 2px solid #ffd6b3;
+  border-radius: 10px;
+  padding: 1rem 0.5rem;
+  margin: 1.5rem auto;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(184, 92, 56, 0.07);
+}
